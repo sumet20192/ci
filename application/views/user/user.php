@@ -7,10 +7,13 @@
             <thead>
                 <tr>
                     <th>#</th>
+                    <th>ชื่อผู้ใช้</th>
                     <th>ชื่อ - สกุล</th>
                     <th>อีเมล์</th>
                     <th>อายุ</th>
+                    <th>Picture</th>
                     <th>จัดการ</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -18,9 +21,11 @@
     ?>
                 <tr>
                     <td><?php echo $user->user_id ?></td>
+                    <td><?php echo $user->username ?></td>
                     <td><?php echo $user->fullname ?></td>
                     <td><?php echo $user->email ?></td>
                     <td><?php echo $user->age ?></td>
+                    <td><?php echo $user->pic ?></td>
                     <td>
                     <a href="/user/show/<?php echo $user->user_id ?>" class="btn btn-info">
 <i class="fa fa-search"></i> แสดง</a>

@@ -20,7 +20,7 @@ class User extends CI_Controller
     }
   
 
-    public function show($userID = "")
+    public function show($userID = "") // แสดง
     {
        $user = $this->user_model->getUserByID($userID);
        $data = array(
@@ -29,7 +29,12 @@ class User extends CI_Controller
        $this->load->view('layout/header');
        $this->load->view('user/show', $data);
        $this->load->view('layout/footer');
-    }
+        }
+
+        public function profile()
+        {
+            echo "Surpice";
+        }
     
     public function edit($userID = "") //แก้ไข
     {

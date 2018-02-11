@@ -1,6 +1,18 @@
 <div class="row">
             <div class="col-8">
             <form action="/user/update/<?php echo $user->user_id ?>" method="post">
+                <div class="form-group">
+                <label>Username</label>
+                       <input value="<?php echo $user->username ?>" name="username" type="text" class="form-control" placeholder="">
+                   </div>
+                   <div class="form-group">
+                   <label>Password</label>
+                       <input value="<?php echo $user->password ?>" name="password" type="password" class="form-control" placeholder="">
+                   </div>
+                   <div class="form-group">
+                   <label>Picture</label>
+                       <input value="<?php echo $user->pic ?>" name="file" type="file" class="form-control" placeholder="">
+                   </div>
                    <div class="form-group">
                        <label>ชื่อ</label>
                        <input value="<?php echo $user->fullname ?>" name="fullname" type="text" class="form-control" placeholder="กรอกชื่อ สกุล">

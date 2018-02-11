@@ -2,6 +2,18 @@
             <div class="col-8">
             <form action="/user/create" method="post">
                    <div class="form-group">
+                   <label>Username</label>
+                       <input name="username" type="text" class="form-control" placeholder="">
+                   </div>
+                   <div class="form-group">
+                   <label>Password</label>
+                       <input name="password" type="password" class="form-control" placeholder="">
+                   </div>
+                   <div class="form-group">
+                   <label>Picture</label>
+                       <input name="file" type="file" class="form-control" placeholder="">
+                   </div>
+                   <div class="form-group">
                        <label>ชื่อ</label>
                        <input name="fullname" type="text" class="form-control" placeholder="กรอกชื่อ สกุล">
                    </div>
