@@ -2,18 +2,17 @@
         <div class="alert alert-danger" role="alert">
             This is a danger alert—check it out!
         </div>
-        <a href="/user/adduser" class="btn btn-success">เพิ่ม</a>
+        <a href="/user/adduser" class="btn btn-success"><i class="fa fa-plus"></i> เพิ่ม</a>
         <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th><i class="fas fa-compass fa-spin"></i></th>
                     <th>ชื่อผู้ใช้</th>
+                    <th>ระดับ</th>
                     <th>ชื่อ - สกุล</th>
                     <th>อีเมล์</th>
                     <th>อายุ</th>
-                    <th>Picture</th>
                     <th>จัดการ</th>
-                    
                 </tr>
             </thead>
             <tbody>
@@ -22,15 +21,18 @@
                 <tr>
                     <td><?php echo $user->user_id ?></td>
                     <td><?php echo $user->username ?></td>
+                    <td><?php echo $user->name ?></td>
                     <td><?php echo $user->fullname ?></td>
                     <td><?php echo $user->email ?></td>
                     <td><?php echo $user->age ?></td>
-                    <td><?php echo $user->pic ?></td>
                     <td>
-                    <a href="/user/show/<?php echo $user->user_id ?>" class="btn btn-info">
-<i class="fa fa-search"></i> แสดง</a>
-                        <a href="/user/edit/<?php echo $user->user_id ?>" class="btn btn-warning">แก้ไข</a>
+                        <a href="/user/show/<?php echo $user->user_id ?>" class="btn btn-info"><i class="fa fa-search"></i> แสดง</a>
+                        <?php if ($this->session->has_userdata('user_id') and $this->session->userdata('user_type_id') == '1') {
+        ?>
+                        <a href="/user/edit/<?php echo $user->user_id ?>" class="btn btn-warning"><i class="fa fa-edit"></i> แก้ไข</a>
                         <a onclick="javascript: return confirm('แน่ใจหรือ ?')" href="/user/delete/<?php echo $user->user_id ?>" class="btn btn-danger"><i class="fa fa-times"></i> ลบ</a>
+                        <?php
+    } ?>
                     </td>
                 </tr>
                 

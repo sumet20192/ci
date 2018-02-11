@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-</head>
+   </head>
 
 <body>
     <div class="container">
@@ -22,18 +22,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">หน้าแรก
+                        <a class="nav-link" href="/"><i class="fas fa-home"></i> หน้าแรก
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user">ผู้ใช้งาน</a>
+                        <a class="nav-link" href="/user"><i class="fas fa-users"></i> ผู้ใช้งาน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">เว็บบอร์ด</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ติดต่อเรา</a>
+                        <a class="nav-link" href="#"><i class="fas fa-address-card"></i> ติดต่อเรา</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">เกี่ยวกับเรา</a>
