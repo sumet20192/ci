@@ -26,7 +26,8 @@ class User_model extends CI_Model
         $username = $data['username'];
         $password = $data['password'];
         $pic = '';
-        $query = "INSERT INTO users (username, password, pic, fullname, email, age, user_type_id) VALUES ('$username', '$password','$pic','$fullname', '$email', '$age','$user_type_id')";
+        $query = "INSERT INTO users (username, password, pic, fullname, email, age, user_type_id) 
+        VALUES ('$username', '$password','$pic','$fullname', '$email', '$age','$user_type_id')";
         return $this->db->query($query);
     }
 
